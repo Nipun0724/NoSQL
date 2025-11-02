@@ -1,0 +1,125 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a1f36 50%, #0f1628 100%);
+  color: #e4e6eb;
+}
+
+.app-header {
+  background: linear-gradient(to bottom, rgba(26, 31, 46, 0.95), rgba(15, 20, 40, 0.9));
+  border-bottom: 2px solid rgba(0, 217, 255, 0.2);
+  padding: 32px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 217, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  font-size: 44px;
+  filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #00d9ff 0%, #00a8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 20px rgba(0, 217, 255, 0.2);
+}
+
+.header-subtitle {
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  color: #a0aac0;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.app-main {
+  padding: 40px 24px;
+}
+
+.layout-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 28px;
+}
+
+.form-section {
+  display: flex;
+}
+
+.incidents-section {
+  min-width: 0;
+}
+
+.error-banner {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+  border-left: 4px solid #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  color: #fca5a5;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    padding: 24px 16px;
+  }
+
+  .app-main {
+    padding: 24px 16px;
+  }
+
+  .header-icon {
+    font-size: 36px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+}

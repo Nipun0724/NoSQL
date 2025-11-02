@@ -1,0 +1,36 @@
+.details-section {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.details-list {
+  list-style-type: none; /* Removes bullets */
+  padding-left: 0;
+  margin: 8px 0 0 0;
+  font-size: 0.9em;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.detail-key {
+  font-weight: 500;
+  color: #555;
+  margin-right: 8px;
+  white-space: nowrap; /* Prevents the key from wrapping */
+}
+
+.detail-value {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #111;
+  text-align: right;
+  word-break: break-all; /* Allows long values to wrap */
+}
